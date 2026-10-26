@@ -1,0 +1,50 @@
+name: Verify
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: ballknowledge
+          POSTGRES_PASSWORD: ci-only-password
+          POSTGRES_DB: ballknowledge_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U ballknowledge -d ballknowledge_test"
+          --health-interval 5s --health-timeout 5s --health-retries 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: npm ci
+      - run: python -m pip install -r services/api/requirements-dev.txt
+      - run: npm test && npm run typecheck
+      - run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: PostgreSQL migration and integration checks
+        run: python -m unittest discover -s tests -p test_api_integration.py
+        env:
+          TEST_DATABASE_URL: postgresql+psycopg://ballknowledge:ci-only-password@localhost:5432/ballknowledge_test
+      - run: ruff check services scripts/build_metric_catalog.py scripts/run_api.py scripts/test_api.py tests/test_api_integration.py tests/test_production_api.py --select E4,E7,E9,F
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+        env:
+          PLAYWRIGHT_CHANNEL: chromium
+          NBA_NETWORK_ENABLED: '0'
+      - name: Save browser evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-evidence
+          path: |
+            test-results
+            playwright-report

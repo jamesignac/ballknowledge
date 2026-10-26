@@ -1,0 +1,33 @@
+{
+  "name": "ballknowledge",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/run.mjs dev",
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/run.mjs start",
+    "api:dev": "python scripts/run_api.py --reload",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/analytics.test.ts",
+    "test:e2e": "playwright test",
+    "data:sync": "python scripts/sync_data.py --refresh",
+    "test:data": "python -m unittest discover -s tests -p test_nba_data.py",
+    "test:api": "python scripts/test_api.py"
+  },
+  "dependencies": {
+    "lucide-react": "1.61.0",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "prettier": "3.9.10",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

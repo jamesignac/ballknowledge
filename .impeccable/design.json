@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T01:57:58.958Z",
+  "title": "Design System: Ballknowledge",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f6f6f2",
+        "tonalRamp": [
+          "oklch(15% 0.005 100)",
+          "oklch(27% 0.011 100)",
+          "oklch(39% 0.015 100)",
+          "oklch(51% 0.018 100)",
+          "oklch(63% 0.017 100)",
+          "oklch(75% 0.014 100)",
+          "oklch(87% 0.009 100)",
+          "oklch(95% 0.004 100)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White Surface",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "oklch(15% 0.000 100)",
+          "oklch(27% 0.000 100)",
+          "oklch(39% 0.000 100)",
+          "oklch(51% 0.000 100)",
+          "oklch(63% 0.000 100)",
+          "oklch(75% 0.000 100)",
+          "oklch(87% 0.000 100)",
+          "oklch(95% 0.000 100)"
+        ]
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "Pale Olive Rail",
+        "canonical": "#eeefe8",
+        "tonalRamp": [
+          "oklch(15% 0.007 110)",
+          "oklch(27% 0.015 110)",
+          "oklch(39% 0.021 110)",
+          "oklch(51% 0.025 110)",
+          "oklch(63% 0.024 110)",
+          "oklch(75% 0.020 110)",
+          "oklch(87% 0.013 110)",
+          "oklch(95% 0.005 110)"
+        ]
+      },
+      "ink": {
+        "role": "secondary",
+        "displayName": "Forest Ink",
+        "canonical": "#24362e",
+        "tonalRamp": [
+          "oklch(15% 0.013 155)",
+          "oklch(27% 0.027 155)",
+          "oklch(39% 0.038 155)",
+          "oklch(51% 0.045 155)",
+          "oklch(63% 0.043 155)",
+          "oklch(75% 0.036 155)",
+          "oklch(87% 0.022 155)",
+          "oklch(95% 0.009 155)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Reading Ink",
+        "canonical": "#29372f",
+        "tonalRamp": [
+          "oklch(15% 0.011 150)",
+          "oklch(27% 0.021 150)",
+          "oklch(39% 0.030 150)",
+          "oklch(51% 0.035 150)",
+          "oklch(63% 0.033 150)",
+          "oklch(75% 0.028 150)",
+          "oklch(87% 0.018 150)",
+          "oklch(95% 0.007 150)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Olive",
+        "canonical": "#626c60",
+        "tonalRamp": [
+          "oklch(15% 0.011 130)",
+          "oklch(27% 0.021 130)",
+          "oklch(39% 0.030 130)",
+          "oklch(51% 0.035 130)",
+          "oklch(63% 0.033 130)",
+          "oklch(75% 0.028 130)",
+          "oklch(87% 0.018 130)",
+          "oklch(95% 0.007 130)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Olive Rule",
+        "canonical": "#e5e8df",
+        "tonalRamp": [
+          "oklch(15% 0.007 115)",
+          "oklch(27% 0.015 115)",
+          "oklch(39% 0.021 115)",
+          "oklch(51% 0.025 115)",
+          "oklch(63% 0.024 115)",
+          "oklch(75% 0.020 115)",
+          "oklch(87% 0.013 115)",
+          "oklch(95% 0.005 115)"
+        ]
+      },
+      "orange": {
+        "role": "primary",
+        "displayName": "Court Orange",
+        "canonical": "#c44826",
+        "tonalRamp": [
+          "oklch(15% 0.045 38)",
+          "oklch(27% 0.090 38)",
+          "oklch(39% 0.128 38)",
+          "oklch(51% 0.150 38)",
+          "oklch(63% 0.142 38)",
+          "oklch(75% 0.120 38)",
+          "oklch(87% 0.075 38)",
+          "oklch(95% 0.030 38)"
+        ]
+      },
+      "orange-light": {
+        "role": "primary",
+        "displayName": "Pale Court Orange",
+        "canonical": "#f9eee7",
+        "tonalRamp": [
+          "oklch(15% 0.012 48)",
+          "oklch(27% 0.024 48)",
+          "oklch(39% 0.034 48)",
+          "oklch(51% 0.040 48)",
+          "oklch(63% 0.038 48)",
+          "oklch(75% 0.032 48)",
+          "oklch(87% 0.020 48)",
+          "oklch(95% 0.008 48)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Court Green",
+        "canonical": "#476b4c",
+        "tonalRamp": [
+          "oklch(15% 0.021 145)",
+          "oklch(27% 0.042 145)",
+          "oklch(39% 0.060 145)",
+          "oklch(51% 0.070 145)",
+          "oklch(63% 0.067 145)",
+          "oklch(75% 0.056 145)",
+          "oklch(87% 0.035 145)",
+          "oklch(95% 0.014 145)"
+        ]
+      },
+      "orange-hover": {
+        "role": "primary",
+        "displayName": "Court Orange Hover",
+        "canonical": "#a83c20",
+        "tonalRamp": [
+          "oklch(15% 0.042 38)",
+          "oklch(27% 0.084 38)",
+          "oklch(39% 0.119 38)",
+          "oklch(51% 0.140 38)",
+          "oklch(63% 0.133 38)",
+          "oklch(75% 0.112 38)",
+          "oklch(87% 0.070 38)",
+          "oklch(95% 0.028 38)"
+        ]
+      },
+      "comparison-highlight": {
+        "role": "primary",
+        "displayName": "Comparison Highlight",
+        "canonical": "#a93e20",
+        "tonalRamp": [
+          "oklch(15% 0.042 38)",
+          "oklch(27% 0.084 38)",
+          "oklch(39% 0.119 38)",
+          "oklch(51% 0.140 38)",
+          "oklch(63% 0.133 38)",
+          "oklch(75% 0.112 38)",
+          "oklch(87% 0.070 38)",
+          "oklch(95% 0.028 38)"
+        ]
+      },
+      "primary-text": {
+        "role": "neutral",
+        "displayName": "Warm Button White",
+        "canonical": "#fff9f4",
+        "tonalRamp": [
+          "oklch(15% 0.007 65)",
+          "oklch(27% 0.015 65)",
+          "oklch(39% 0.021 65)",
+          "oklch(51% 0.025 65)",
+          "oklch(63% 0.024 65)",
+          "oklch(75% 0.020 65)",
+          "oklch(87% 0.013 65)",
+          "oklch(95% 0.005 65)"
+        ]
+      },
+      "spotlight": {
+        "role": "secondary",
+        "displayName": "Spotlight Forest",
+        "canonical": "#253c32",
+        "tonalRamp": [
+          "oklch(15% 0.015 155)",
+          "oklch(27% 0.030 155)",
+          "oklch(39% 0.043 155)",
+          "oklch(51% 0.050 155)",
+          "oklch(63% 0.048 155)",
+          "oklch(75% 0.040 155)",
+          "oklch(87% 0.025 155)",
+          "oklch(95% 0.010 155)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Player Display",
+        "purpose": "Condensed spotlight surnames; responsive overrides are documented in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Page Headline",
+        "purpose": "Main page title."
+      },
+      "title": {
+        "displayName": "Panel Title",
+        "purpose": "Compact panel headings."
+      },
+      "body": {
+        "displayName": "Reading Text",
+        "purpose": "Default workspace typography."
+      },
+      "label": {
+        "displayName": "Control Label",
+        "purpose": "Compact button labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "tooltip",
+        "value": "0 4px 12px #20332020",
+        "purpose": "Dark chart tooltip."
+      },
+      {
+        "name": "comparison-dock",
+        "value": "0 7px 30px #24362e1f",
+        "purpose": "Fixed selected-player dock."
+      },
+      {
+        "name": "dialog",
+        "value": "0 16px 90px #14251b40",
+        "purpose": "Native modal dialog."
+      },
+      {
+        "name": "toast",
+        "value": "0 5px 20px #24362e22",
+        "purpose": "Visible transient feedback."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Drawer entrance and mobile navigation."
+      },
+      {
+        "name": "control-state",
+        "value": "0.15s",
+        "purpose": "Button and navigation color changes."
+      },
+      {
+        "name": "drawer-in",
+        "value": "0.4s",
+        "purpose": "Profile entrance from translateX(36px), opacity 0.6 to resting position."
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "0.25s",
+        "purpose": "Rail slides from translateX(-100%) to 0."
+      },
+      {
+        "name": "toast",
+        "value": "0.2s",
+        "purpose": "Feedback opacity and translation."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "(prefers-reduced-motion: reduce)",
+        "purpose": "Disable animations and transitions and restore automatic scroll behavior."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-desktop-min",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1200px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "1000px"
+      },
+      {
+        "name": "navigation-drawer-max",
+        "value": "767px"
+      },
+      {
+        "name": "stacked-phone-max",
+        "value": "590px"
+      },
+      {
+        "name": "narrow-phone-max",
+        "value": "350px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Court-orange action for the next explicit step.",
+      "html": "<button class=\"ds-primary\">Compare players</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 12px;min-height:36px;border-radius:6px;font:700 10px/1.6 Manrope,sans-serif;cursor:pointer;transition:background .15s,border-color .15s;background:var(--orange,#c44826);border:1px solid transparent;color:#fff9f4}.ds-primary:hover{background:#a83c20}.ds-primary:disabled{opacity:.4;cursor:not-allowed}.ds-primary:focus-visible,.ds-default:focus-visible,.ds-secondary:focus-visible,.ds-nav:focus-visible,.ds-chip:focus-visible,.ds-search input:focus-visible,.ds-spotlight button:focus-visible{outline:2px solid var(--orange,#c44826);outline-offset:4px}"
+    },
+    {
+      "name": "Default Button",
+      "kind": "button",
+      "refersTo": "button-default",
+      "description": "White bordered utility action.",
+      "html": "<button class=\"ds-default\">Export CSV</button>",
+      "css": ".ds-default{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 12px;min-height:36px;border-radius:6px;font:700 10px/1.6 Manrope,sans-serif;cursor:pointer;transition:background .15s,border-color .15s;background:var(--surface,#fff);border:1px solid #dce2d5;color:var(--text,#29372f)}.ds-default:hover{background:#edf0e7;border-color:#bfcbb6}.ds-primary:focus-visible,.ds-default:focus-visible,.ds-secondary:focus-visible,.ds-nav:focus-visible,.ds-chip:focus-visible,.ds-search input:focus-visible,.ds-spotlight button:focus-visible{outline:2px solid var(--orange,#c44826);outline-offset:4px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Pale-orange supporting action and selected comparison state.",
+      "html": "<button class=\"ds-secondary\">Added to comparison</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 12px;min-height:36px;border-radius:6px;font:700 10px/1.6 Manrope,sans-serif;cursor:pointer;transition:background .15s,border-color .15s;background:var(--orange-light,#f9eee7);color:var(--orange,#c44826);border:1px solid transparent}.ds-secondary:hover{background:#edf0e7;border-color:#bfcbb6}.ds-primary:focus-visible,.ds-default:focus-visible,.ds-secondary:focus-visible,.ds-nav:focus-visible,.ds-chip:focus-visible,.ds-search input:focus-visible,.ds-spotlight button:focus-visible{outline:2px solid var(--orange,#c44826);outline-offset:4px}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "description": "Search lives inside the bordered scope toolbar.",
+      "html": "<label class=\"ds-search\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><circle cx=\"10.5\" cy=\"10.5\" r=\"7.5\"/><path d=\"m16 16 5 5\"/></svg><input aria-label=\"Search players\" placeholder=\"Search players…\" /></label>",
+      "css": ".ds-search{display:flex;align-items:center;gap:9px;min-width:120px;padding:7px 15px;background:white;border:1px solid var(--line,#e5e8df);border-radius:8px;color:#7a8374}.ds-search input{width:100%;min-width:0;height:30px;border:0;background:transparent;font:11px/1.6 Manrope,sans-serif;color:var(--text,#29372f);caret-color:var(--orange,#c44826)}.ds-search input::placeholder{color:#737a72}.ds-search:focus-within{color:var(--orange,#c44826)}.ds-primary:focus-visible,.ds-default:focus-visible,.ds-secondary:focus-visible,.ds-nav:focus-visible,.ds-chip:focus-visible,.ds-search input:focus-visible,.ds-spotlight button:focus-visible{outline:2px solid var(--orange,#c44826);outline-offset:4px}"
+    },
+    {
+      "name": "Active Navigation",
+      "kind": "nav",
+      "description": "Familiar rail navigation with pale-orange active state.",
+      "html": "<nav class=\"ds-rail\" aria-label=\"Workspace\"><button class=\"ds-nav\" aria-current=\"page\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M4 20V10m8 10V4m8 16v-7\"/></svg>Player explorer</button></nav>",
+      "css": ".ds-rail{padding:12px;background:var(--rail,#eeefe8)}.ds-nav{display:flex;align-items:center;gap:11px;width:100%;min-height:44px;padding:10px 12px;border:0;border-radius:7px;background:transparent;text-align:left;color:#5d6a5c;font:650 11px/1.6 Manrope,sans-serif;cursor:pointer;transition:background .15s,color .15s}.ds-nav:hover{background:#e4e8dc;color:var(--ink,#24362e)}.ds-nav[aria-current=page]{background:#f6e5d9;color:#ac3e20}.ds-primary:focus-visible,.ds-default:focus-visible,.ds-secondary:focus-visible,.ds-nav:focus-visible,.ds-chip:focus-visible,.ds-search input:focus-visible,.ds-spotlight button:focus-visible{outline:2px solid var(--orange,#c44826);outline-offset:4px}"
+    },
+    {
+      "name": "Selected Player Chip",
+      "kind": "chip",
+      "description": "Compact removal control from the comparison dock; portrait omitted in this asset-free preview.",
+      "html": "<button class=\"ds-chip\" aria-label=\"Remove Nikola Jokić from comparison\">Jokić<svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m6 6 12 12M18 6 6 18\"/></svg></button>",
+      "css": ".ds-chip{display:flex;align-items:center;gap:5px;padding:3px 7px 3px 2px;border:0;border-radius:5px;background:#f3f5ed;color:var(--text,#29372f);font:650 9px/1.6 Manrope,sans-serif;cursor:pointer}.ds-chip svg{color:#7f8a75}.ds-primary:focus-visible,.ds-default:focus-visible,.ds-secondary:focus-visible,.ds-nav:focus-visible,.ds-chip:focus-visible,.ds-search input:focus-visible,.ds-spotlight button:focus-visible{outline:2px solid var(--orange,#c44826);outline-offset:4px}"
+    },
+    {
+      "name": "Analysis Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat white analytical container with a quiet olive boundary.",
+      "html": "<section class=\"ds-panel\"><header class=\"ds-panel-heading\"><div><h2>Player database</h2><p>Same scope. Every player.</p></div></header></section>",
+      "css": ".ds-panel{min-width:0;overflow:hidden;background:var(--surface,#fff);border:1px solid var(--line,#e5e8df);border-radius:var(--radius,12px);color:var(--text,#29372f);font-family:Manrope,sans-serif}.ds-panel-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:22px 24px 12px}.ds-panel h2{margin:0;font-size:16px;font-weight:750;line-height:1.25;letter-spacing:-.35px}.ds-panel p{margin:5px 0 0;color:var(--muted,#626c60);font-size:10px;line-height:1.6}"
+    },
+    {
+      "name": "Player Spotlight",
+      "kind": "custom",
+      "refersTo": "spotlight",
+      "description": "Forest player identity with a jersey-number backdrop. Production adds the player's headshot.",
+      "html": "<section class=\"ds-spotlight\"><span class=\"ds-jersey\" aria-hidden=\"true\">15</span><div class=\"ds-identity\"><span class=\"ds-first\">Nikola</span><h2>JOKIĆ</h2><p>Denver Nuggets · Center</p></div><div class=\"ds-stats\"><strong>28.4 <small>PTS</small></strong><strong>12.7 <small>REB</small></strong><strong>10.2 <small>AST</small></strong></div><button>View player profile <span aria-hidden=\"true\">→</span></button></section>",
+      "css": ".ds-spotlight{position:relative;display:flex;flex-direction:column;overflow:hidden;min-height:337px;padding:20px 22px 18px;border-radius:var(--radius,12px);background:#253c32;color:#f4f3e9;font-family:Manrope,sans-serif}.ds-identity{position:relative;z-index:2;flex:1;padding-top:31px}.ds-first{font-size:16px;font-weight:500;letter-spacing:-.3px}.ds-spotlight h2{margin:1px 0 0;font:600 53px/1 \"Barlow Condensed\",sans-serif;letter-spacing:-1px}.ds-spotlight p{margin:9px 0 0;font-size:9px;color:#cfdbc8}.ds-jersey{position:absolute;right:20px;top:35px;color:#3c5346;font:600 156px/1 \"Barlow Condensed\",sans-serif;letter-spacing:-5px}.ds-stats{position:relative;z-index:3;display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding:14px 0 17px;border-top:1px solid #546552;background:#253c32}.ds-stats strong{font-size:24px;line-height:1.3;font-weight:650;letter-spacing:-.8px;font-variant-numeric:tabular-nums}.ds-stats small{font-size:8px;color:#c2cdb8;font-weight:400;letter-spacing:0}.ds-spotlight button{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 12px;border:1px solid #66785c;border-radius:5px;background:#324b3b;color:#f1f0e3;font:650 10px/1.6 Manrope,sans-serif;cursor:pointer}.ds-spotlight button:hover{background:#456044}.ds-primary:focus-visible,.ds-default:focus-visible,.ds-secondary:focus-visible,.ds-nav:focus-visible,.ds-chip:focus-visible,.ds-search input:focus-visible,.ds-spotlight button:focus-visible{outline:2px solid var(--orange,#c44826);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Scouting desk",
+    "overview": "Warm paper, pale olive navigation, forest ink, and court-orange actions give a dense analysis workspace a familiar basketball character. Player photographs and oversize jersey numerals provide recognition; aligned tables and compact conventional controls support sustained exploration.\n\nThis records the implemented local MVP. The visual direction was selected during code-led implementation; no visual comp or aesthetic workshop was approved by the user.",
+    "keyCharacteristics": [
+      "Warm, flat analytical surfaces.",
+      "Portrait-led player identity.",
+      "Compact controls and aligned numeric columns.",
+      "One visible scope across linked representations."
+    ],
+    "rules": [
+      {
+        "name": "The Scope Rule",
+        "body": "Preserve the same selection language across tables, plots, profiles, and comparisons: orange marks interaction and comparison state; team colors identify teams.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numeric Alignment Rule",
+        "body": "Keep statistics aligned and use tabular numerals in tables and spotlight stat groups.",
+        "section": "typography"
+      },
+      {
+        "name": "The Surface Rule",
+        "body": "Use borders and tone for ordinary panels; reserve elevation for overlays, tooltips, the comparison dock, and feedback.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve clear player identity through headshots, names, and jersey context.",
+      "Do keep source provenance, observed coverage, freshness, and sample size visible near statistics.",
+      "Do preserve linked selection states and numeric alignment across representations.",
+      "Do keep phone charts readable and confine horizontal scrolling to data tables.",
+      "Do retain visible keyboard focus, native dialog behavior, and reduced-motion support."
+    ],
+    "donts": [
+      "Don't apply overlay shadows to ordinary data panels.",
+      "Don't use team colors as replacements for the orange interaction state.",
+      "Don't shrink the desktop scatter wholesale to produce the phone chart."
+    ]
+  }
+}

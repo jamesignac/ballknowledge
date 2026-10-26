@@ -1,0 +1,75 @@
+services:
+  db:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_USER: ballknowledge
+      POSTGRES_DB: ballknowledge
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD before starting containers}
+    volumes:
+      - postgres:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ballknowledge -d ballknowledge"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      DB_HOST: db
+      POSTGRES_USER: ballknowledge
+      POSTGRES_DB: ballknowledge
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD before starting containers}
+    volumes:
+      - snapshots:/app/public/data
+      - source-cache:/app/.data-cache
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,urllib.request; assert json.load(urllib.request.urlopen('http://127.0.0.1:8000/api/health'))['status']=='ok'"]
+      interval: 10s
+      timeout: 5s
+      start_period: 60s
+      retries: 12
+    read_only: true
+    tmpfs: [/tmp]
+    restart: unless-stopped
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    read_only: true
+    tmpfs: [/tmp, /app/.next/cache]
+    restart: unless-stopped
+  refresh:
+    profiles: [refresh]
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    command: ["python", "-m", "services.api.jobs.refresh", "--interval-seconds", "86400"]
+    environment:
+      DB_HOST: db
+      POSTGRES_USER: ballknowledge
+      POSTGRES_DB: ballknowledge
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD before starting containers}
+    volumes:
+      - snapshots:/app/public/data
+      - source-cache:/app/.data-cache
+    depends_on:
+      api:
+        condition: service_healthy
+    read_only: true
+    tmpfs: [/tmp]
+    restart: unless-stopped
+volumes:
+  postgres:
+  snapshots:
+  source-cache:

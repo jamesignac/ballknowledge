@@ -1,0 +1,7 @@
+-r ../../scripts/requirements.txt
+fastapi==0.162.0
+uvicorn==0.54.0
+SQLAlchemy==2.1.6
+alembic==1.20.1
+httpx2==2.16.0
+psycopg[binary]==3.3.6

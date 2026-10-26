@@ -1,7 +1,8 @@
 # ballknowledge — System Architecture & Product Specification
 
-**Status:** Proposed architecture (not yet implemented)  
-**Version:** 0.1.0  
+**Status:** Public-data analytics implementation and production service foundation; broader modules and deployment validation remain
+
+**Version:** 0.2.0
 **Created:** October 25, 2026  
 **Application:** `ballknowledge`  
 **Category:** NBA data exploration and player-intelligence web application
@@ -11,6 +12,8 @@
 > **Reference and originality:** Product inspiration comes from public-facing Hoopology analytics experiences (see appendix). Implement independent UI, code, brand, calculations, and licensed/authorized data access. References marked **Reference behavior (research)** describe inspirations, not requirements or verified internals.
 
 ## 0. Product vision and engineering decisions
+
+**Implementation note:** The app now includes a FastAPI/SQLAlchemy service, versioned migrations, validated NBA facts and snapshots, scoped provider caching, a 318-entry metric catalog, customizable stats/percentiles, advanced scatter and comparisons, linked calendar/game boxes, player splits/career data, team ratings/four factors, public shot zones/play types, lineups/matrix, on/off, matchup exploration, playoff series, historical pooling and local rankings. Regular-season imports cover 2023-24 through 2026-27; completed playoff imports cover 2023-24 through 2025-26. Daily refresh, health/timing logs, container/PostgreSQL configuration and CI are implemented. This does not claim that every module below is complete or that public deployment has been validated. See docs/implementation-status.md and docs/operations.md for exact boundaries, unavailable metrics and launch checks.
 
 **Mission:** Give basketball analysts, fans, researchers, and decision-makers a unified workspace to ask who is performing well, why they are performing well, how they fit with other players, and whether an apparent impact holds up under contextual filters.
 

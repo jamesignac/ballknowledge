@@ -1,0 +1,13 @@
+.git
+.tools
+.data-cache
+.next
+node_modules
+out
+.env*
+test-results
+playwright-report
+.impeccable/review
+**/__pycache__
+**/*.pyc
+*.tsbuildinfo

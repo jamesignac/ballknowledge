@@ -1,0 +1,694 @@
+.research-workspace {
+  min-width: 0;
+}
+.scoring-court-section {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+.scoring-court-section > label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 330px;
+  font-size: 11px;
+}
+.scoring-court-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+.scoring-court-layout svg {
+  width: 100%;
+  height: auto;
+}
+.scoring-court-layout h3 {
+  margin: 0 0 10px;
+  font-size: 19px;
+}
+.scoring-court-layout p {
+  font-size: 12px;
+  max-width: 55ch;
+}
+.scoring-court-layout dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+}
+.scoring-court-layout dd {
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+}
+.player-research-details {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  margin-top: 24px;
+}
+.player-research-details > summary {
+  font-weight: 700;
+  cursor: pointer;
+}
+.player-research {
+  margin-top: 18px;
+}
+.player-research .research-tabs button {
+  font-size: 11px;
+  padding: 8px;
+}
+.player-research .research-table {
+  font-size: 11px;
+}
+.playoff-rounds {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(190px, 1fr));
+  overflow: auto;
+  gap: 20px;
+  margin-top: 24px;
+}
+.playoff-rounds h3 {
+  font-size: 13px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.playoff-rounds details {
+  margin-bottom: 16px;
+  font-size: 12px;
+  padding: 12px;
+  background: var(--rail);
+  border-radius: 5px;
+}
+.playoff-rounds summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.ranking-board > section {
+  display: flex;
+  border-bottom: 1px solid var(--line);
+  min-height: 90px;
+}
+.ranking-board h3 {
+  flex: 0 0 85px;
+  margin: 0;
+  padding: 20px 12px;
+  background: var(--rail);
+  font-size: 15px;
+}
+.ranking-board > section > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+}
+.ranking-board article {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 11px;
+}
+.ranking-board p {
+  font-size: 11px;
+}
+.ranking-search {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 24px;
+  max-width: 350px;
+  font-size: 11px;
+}
+.ranking-unassigned {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
+}
+.ranking-unassigned > label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+}
+.season-hub {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.month-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.month-heading label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.month-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+}
+.calendar-weekday {
+  text-align: center;
+  padding: 6px 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+.month-calendar button {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  min-height: 65px;
+  text-align: left;
+}
+.month-calendar button.selected {
+  background: #e9efe4;
+  border-color: #9dac94;
+}
+.month-calendar button:hover {
+  border-color: var(--orange);
+}
+.month-calendar button small {
+  color: var(--muted);
+  font-size: 10px;
+}
+.hub-schedule {
+  margin-top: 20px;
+}
+.hub-schedule summary,
+.hub-standings-summary {
+  font-weight: 750;
+  cursor: pointer;
+}
+.hub-score-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+  max-height: 400px;
+  overflow: auto;
+}
+.hub-score-list article {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.hub-score-list article > span {
+  color: var(--muted);
+  font-size: 10px;
+}
+.hub-score-list strong > span {
+  font-weight: 400;
+}
+.hub-score-list button {
+  text-align: left;
+}
+.research-tabs {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+.research-tabs button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 650;
+}
+.research-tabs button:hover {
+  background: var(--rail);
+}
+.research-tabs button.active {
+  color: #fff;
+  background: var(--ink);
+}
+.research-scope {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.research-scope label,
+.workbench-controls > label,
+.metric-filter-form > label,
+.column-picker-body > label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 650;
+}
+.research-scope input,
+.research-scope select,
+.research-panel select,
+.research-panel input:not([type="checkbox"]) {
+  border: 1px solid #c9cfc3;
+  border-radius: 5px;
+  background: #fff;
+  padding: 9px 11px;
+  min-height: 40px;
+  color: var(--text);
+  max-width: 100%;
+}
+.research-scope input {
+  width: 135px;
+}
+.research-scope p {
+  margin: 0 0 2px auto;
+  max-width: 29ch;
+  font-size: 11px;
+  color: var(--muted);
+}
+.research-panel {
+  padding: 24px;
+  overflow: visible;
+  min-width: 0;
+}
+.research-panel h2 {
+  font-size: 19px;
+  letter-spacing: -0.4px;
+  margin: 0 0 5px;
+}
+.research-panel p {
+  color: var(--muted);
+}
+.workbench-heading {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.workbench-heading p {
+  margin: 0;
+  font-size: 12px;
+}
+.workbench-controls {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.workbench-controls select {
+  max-width: 240px;
+}
+.research-panel .checkbox-control {
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 0;
+}
+.checkbox-control input {
+  width: 16px;
+  height: 16px;
+}
+.column-picker {
+  position: relative;
+}
+.column-picker summary {
+  cursor: pointer;
+  padding: 9px 12px;
+  border: 1px solid #c9cfc3;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.column-picker-body {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  z-index: 10;
+  width: 370px;
+  max-width: calc(100vw - 64px);
+  padding: 18px;
+  background: white;
+  border: 1px solid #bac2b4;
+  border-radius: 12px;
+}
+.column-picker-body > p {
+  font-size: 11px;
+  margin: 8px 0;
+}
+.metric-options {
+  max-height: 350px;
+  overflow: auto;
+}
+.metric-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+}
+.metric-options input {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+.metric-options strong,
+.metric-options small {
+  display: block;
+}
+.metric-options small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.metric-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 8px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.metric-filter-form select {
+  max-width: 270px;
+}
+.metric-filter-form input {
+  width: 90px;
+}
+.research-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+.research-filter-chips button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--rail);
+  padding: 6px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.research-table-summary {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 0;
+  font-size: 11px;
+}
+.research-table-summary span {
+  color: var(--muted);
+}
+.research-table-scroll {
+  overflow: auto;
+  max-height: 720px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  scrollbar-width: thin;
+}
+.research-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.research-table caption {
+  text-align: left;
+  padding: 12px;
+  white-space: normal;
+  font-size: 12px;
+}
+.research-table th,
+.research-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 12px;
+  text-align: right;
+}
+.research-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--rail);
+  font-size: 10px;
+  font-weight: 750;
+}
+.research-table thead button {
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: none;
+  padding: 4px 0;
+}
+.research-table th.identity-column {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: white;
+  text-align: left;
+  min-width: 220px;
+  max-width: 280px;
+}
+.research-table thead th.identity-column {
+  z-index: 3;
+  background: var(--rail);
+}
+.research-table .research-player {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-align: left;
+  font-weight: 700;
+}
+.research-player .player-avatar {
+  width: 35px;
+  height: 35px;
+}
+.research-player small {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-top: 3px;
+}
+.research-compare-button {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c9cfc3;
+  border-radius: 5px;
+}
+.research-compare-button[aria-pressed="true"] {
+  background: var(--ink);
+  color: white;
+}
+.missing-label {
+  display: block;
+  font-size: 9px;
+  color: var(--muted);
+}
+.research-methodology {
+  border-top: 1px solid var(--line);
+  margin-top: 12px;
+  padding-top: 16px;
+  font-size: 12px;
+}
+.research-methodology summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.research-methodology dl > div {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+.research-methodology dt {
+  font-weight: 750;
+}
+.research-methodology dd {
+  margin: 3px 0 0;
+  color: var(--muted);
+  max-width: 78ch;
+}
+.research-status,
+.research-empty {
+  padding: 34px 16px;
+  color: var(--muted);
+}
+.research-status h2,
+.research-empty h3 {
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+.research-status p,
+.research-empty p {
+  margin: 0 0 14px;
+  max-width: 72ch;
+}
+.research-status {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.research-chart {
+  min-width: 0;
+}
+.research-chart svg {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+}
+.research-chart [role="button"] {
+  cursor: pointer;
+}
+.research-chart [role="button"]:focus {
+  outline: none;
+}
+.research-chart [role="button"]:focus circle {
+  stroke: var(--ink);
+  stroke-width: 3px;
+}
+.research-chart-caption {
+  min-height: 2em;
+  font-size: 12px;
+}
+.research-footnote {
+  font-size: 11px;
+  margin: 16px 0 0;
+  max-width: 85ch;
+}
+.research-comparison-scroll {
+  display: flex;
+  overflow: auto;
+  margin-top: 24px;
+  font-variant-numeric: tabular-nums;
+}
+.research-comparison-labels {
+  flex: 0 0 95px;
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 1;
+}
+.research-comparison-column {
+  flex: 1 0 195px;
+  min-width: 195px;
+}
+.research-comparison-column > header,
+.research-comparison-labels > header {
+  height: 155px;
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.research-comparison-column label {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.research-comparison-column header > button {
+  text-align: left;
+  font-size: 10px;
+  color: var(--orange);
+  padding: 0;
+}
+.research-comparison-column small {
+  font-size: 9px;
+  color: var(--muted);
+}
+.research-comparison-column > div,
+.research-comparison-labels > div {
+  height: 44px;
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+}
+.research-comparison-column > div {
+  text-align: center;
+}
+@media (max-width: 650px) {
+  .scoring-court-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .month-calendar {
+    gap: 3px;
+  }
+  .month-calendar button {
+    padding: 6px 4px;
+    min-height: 52px;
+  }
+  .month-calendar button small {
+    font-size: 8px;
+  }
+  .research-panel {
+    padding: 16px;
+  }
+  .workbench-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+  .research-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .research-tabs button {
+    flex: 0 0 auto;
+    font-size: 11px;
+  }
+  .research-scope {
+    gap: 12px;
+  }
+  .research-scope p {
+    margin: 0;
+    max-width: none;
+    width: 100%;
+  }
+  .research-scope label {
+    flex: 1 1 130px;
+  }
+  .research-scope input,
+  .research-scope select {
+    width: 100%;
+  }
+  .research-table th.identity-column {
+    min-width: 155px;
+    max-width: 180px;
+    white-space: normal;
+  }
+  .research-player .player-avatar {
+    display: none;
+  }
+  .metric-filter-form > label:first-child {
+    width: 100%;
+  }
+  .metric-filter-form select {
+    max-width: 100%;
+  }
+  .column-picker-body {
+    left: -100px;
+  }
+  .research-chart svg {
+    min-width: 0;
+  }
+}

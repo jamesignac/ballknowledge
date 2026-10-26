@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.tools/
+.data-cache/
+__pycache__/
+.venv/
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo
+.impeccable/review/
